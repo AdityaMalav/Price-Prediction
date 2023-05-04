@@ -170,7 +170,7 @@ def stockPredictionModel(name_of_stock, number_of_share, start_date, end_date):
 ###----------------------------------------------------------------------------
 col1,mid, col2 = st.columns([1, 30, 40])
 with col1:
-    st.image('pngwing.com (1).png',width=370)
+    st.image('pngwing.com (1).png',width=340)
     st.title("""Stock Price Prediction""")
 with col2:
     stock_name =  st.selectbox('Select the Stock', ('ADANIENT', 'ADANIPORTS', 'APOLLOHOSP', 'ASIANPAINT', 'AXISBANK',
