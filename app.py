@@ -9,8 +9,7 @@ import tensorflow as tfl
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
-import  datetime
-from PIL import  Image
+import  datetime, time
 
 st.set_page_config(page_title="Stock Price-Prediction", page_icon="📊", layout="wide")
 
@@ -191,7 +190,7 @@ with col2:
     if st.button('🔎'):
         with st.spinner('Operation in progress. Please wait....'):
             time.sleep(0.1)
-            
+
             result = stockPredictionModel(stock_name, number_of_stocks, start_date, end_date)
 
 
@@ -204,3 +203,4 @@ with col2:
                 st.write(f'##### If you pick {stock_name} from {start_date} to {end_date}.\n### You will get {result} Profit',
                          unsafe_allow_html=True,
                          style={"color": "black"} )
+
