@@ -16,7 +16,7 @@ st.set_page_config(page_title="Stock Price-Prediction", page_icon="📊", layout
 css = f"""
      <style>
      .stApp {{
-         background-image: url("https://pixabay.com/get/g9543772c694d2a6ce8de9066a6682f312d6bf40572df84195859ae2b0d1cae8e7fca9a4dd50959ca73fc929912d4f734b92a98e9e4007db49fcfe7754f368a179a77eb40d8f533d4fab2b968b7eafd0f_1920.jpg");
+         background-image: url("https://cdn.pixabay.com/photo/2020/08/09/14/25/business-5475664_1280.jpg");
          background-attachment: fixed;
          background-size: cover
      }}
