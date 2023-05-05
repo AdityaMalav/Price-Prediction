@@ -184,14 +184,14 @@ with col2:
        'TATASTEEL', 'TECHM', 'TITAN', 'UPL', 'ULTRACEMCO', 'WIPRO'))
 
     number_of_stocks = st.number_input(f"Enter {stock_name}'s Number of Stocks.", step=1)
-    start_date = st.date_input('Select the Starting date.', datetime.date(2023,9,22))
-    end_date = st.date_input('Select the End date.', datetime.date(2024,9,22))
+    start_date = st.date_input('Select the Starting date.', datetime.date(2020,9,22))
+    end_date = st.date_input('Select the End date.', datetime.date(2021,9,22))
 
     if st.button('🔎'):
         with st.spinner('Operation in progress. Please wait....'):
             time.sleep(0.1)
 
-            result = stockPredictionModel(stock_name, number_of_stocks, start_date, end_date)
+            result = round(stockPredictionModel(stock_name, number_of_stocks, start_date, end_date), 2)
 
 
             if result < 0:
