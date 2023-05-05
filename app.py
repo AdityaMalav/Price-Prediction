@@ -185,7 +185,7 @@ with col2:
 
     number_of_stocks = st.number_input(f"Enter {stock_name}'s Number of Stocks.", step=1)
     start_date = st.date_input('Select the Starting date.', datetime.date(2020,9,22))
-    end_date = st.date_input('Select the End date.', datetime.date(2020,9,22))
+    end_date = st.date_input('Select the End date.', datetime.date(2024,9,22))
 
     if st.button('🔎'):
         with st.spinner('Operation in progress. Please wait....'):
