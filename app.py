@@ -184,7 +184,7 @@ with col2:
        'TATASTEEL', 'TECHM', 'TITAN', 'UPL', 'ULTRACEMCO', 'WIPRO'))
 
     number_of_stocks = st.number_input(f"Enter {stock_name}'s Number of Stocks.", step=1)
-    start_date = st.date_input('Select the Starting date.', datetime.date(2020,9,22))
+    start_date = st.date_input('Select the Starting date.', datetime.date(2023,9,22))
     end_date = st.date_input('Select the End date.', datetime.date(2024,9,22))
 
     if st.button('🔎'):
