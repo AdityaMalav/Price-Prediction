@@ -6,3 +6,4 @@ scikit_learn==1.2.2
 seaborn==0.11.2
 streamlit==1.18.1
 tensorflow==2.12.0
+altair==4.0
